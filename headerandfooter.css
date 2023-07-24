@@ -1,0 +1,25 @@
+div.head-bar{
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1d559f;
+    color: white;
+    padding: 10px;
+}
+div.logo{
+    width: 30%;
+}
+div.logo > img{
+    width: 100%;
+}
+div.aside-logo{
+    width: 70%;
+    padding-left: 7rem;
+}
+div.aside-logo > div{
+    margin-left: 1rem;
+    justify-content: space-between;
+    align-items: center;
+    border-right: 1px solid whitesmoke;
+    display: block;
+    padding: 1rem;
+}
