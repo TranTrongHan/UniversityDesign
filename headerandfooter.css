@@ -1,25 +1,29 @@
-div.head-bar{
+div.head-bar{   
     justify-content: space-between;
     align-items: center;
-    background-color: #1d559f;
+    background-color: #1d559f ;
     color: white;
-    padding: 10px;
-}
+    position: fixed;
+    
+}   
 div.logo{
     width: 30%;
 }
-div.logo > img{
-    width: 100%;
-}
 div.aside-logo{
     width: 70%;
-    padding-left: 7rem;
 }
-div.aside-logo > div{
-    margin-left: 1rem;
-    justify-content: space-between;
-    align-items: center;
-    border-right: 1px solid whitesmoke;
+div.aside-logo > ul > li{
+    list-style-type: none;
+   
+}
+div.aside-logo > ul > li > a{
+    
+    color: white;
     display: block;
-    padding: 1rem;
+    padding: 20px;
+    border-right: 1px solid white;
+}
+ul{
+    justify-content: space-evenly;
+    align-items: center;
 }
