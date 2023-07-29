@@ -6,6 +6,8 @@ div.head-bar{
     position: fixed;
     height: 60px;
     top: 0;
+    width: 100%;
+    z-index: 99;
 }   
 div.logo{
     width: 30%;
