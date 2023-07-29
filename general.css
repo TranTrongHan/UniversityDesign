@@ -3,11 +3,14 @@
     padding: 0;
     box-sizing: inherit;
     text-decoration: none;
-    font-family: 'Montserrat', sans-serif;
-    font-family: 'Poppins', sans-serif;
+   
 }
 html{
     box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 .flex{
     display: flex;
@@ -19,3 +22,5 @@ a{
     text-decoration: none;
     color: black;
 }
+
+

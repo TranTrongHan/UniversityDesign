@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo</title>
+    <script>
+        function giaiBac1(){
+            var a=document.getElementById("aId").value;
+            var b=document.getElementById("bId").value;
+
+            a=parseFloat(a);
+            b=parseFloat(b);
+
+            if(a==0){
+                if(b==0)
+                    alert("Phuong trinh vo so nghiem!")
+                else
+                    alert("Phuong trinh vo nghiem!")
+            }
+            else{
+                alert("Nghiem x =" + (-b/a))
+            }
+        }
+
+        function doiMauNen(obj){
+            var color=obj.value     //document.getElementById("colorName").value
+            var body=document.getElementById("bodyId")
+            body.style.backgroundColor=color
+        }
+    </script>
+    <style>
+        div.item{
+            width: 50%;
+            margin-top: 100px;
+        }
+        div.item img{
+            width: 100%;
+        }
+        div.thumb{
+            display: flex;
+        }
+        div.thumb > div{
+            width: 20%;
+            margin: 10px;
+        }
+        div.thumb img{
+            height: 130px
+        }
+        
+        div.ball-area{
+            width:300px;
+            height: 230px;
+            background-color: lightblue;
+            position: relative;
+        }
+        #ball{
+            width: 50px;
+            background: transparent;
+            position: absolute;
+        }
+    </style>
+    <script>
+        function changeImage(obj){
+            var main=document.getElementById("mainImg")
+            var path=obj.src
+            main.src=path
+        }
+
+        function init(){
+            var images=document.querySelectorAll("div.thumb img")
+            for(var i=0;i<images.length;i++){
+                images[i].onclick=function(){
+                    var path=this.src
+                    var main=document.getElementById("mainImg")
+                    main.setAttribute("src",path)
+                }
+            }
+
+            var timer = setInterval(function() {
+                var c=document.getElementById("clock")
+                var d=new Date()
+                c.innerText=`${d.getHours()}:${d.getMinutes()}:${d.getSeconds()}`
+            },1000)
+            // clearInterval(timer)
+        }
+        var timer=null
+        var left=0 , t=0, incX=5,incY=5
+        function play(){
+            var ball=document.getElementById("ball")
+            var area=document.getElementsByClassName("ball-area")[0]
+            timer=setInterval(function(){
+                if(t < 0 || t+ball.offsetHeight >= area.offsetHeight){
+                    incY=-incY;
+                }
+                if(left< 0 || left+ball.offsetWidth >= area.offsetWidth){
+                    incX=-incX;
+                }
+                left+=incX
+                t+=incY
+                ball.style.top=t + "px"
+                ball.style.left=left + "px"
+            },100)
+        }
+
+        function stop(){
+            clearInterval(timer)
+        }
+    </script>
+</head>
+<body id="bodyId" onload="init()">
+    <!-- <input type="text" id="colorName" onchange="doiMauNen(this)" placeholder="Nhap ten mau va enter"/>
+    <h1>ax + b = 0</h1>
+    <input type="number" placeholder="a =" id="aId" />
+    <input type="number" placeholder="b =" id="bId" />
+    <input type="button" value="Giai" onclick="giaiBac1()"/> -->
+    <div>
+        <h1  id="clock">00:00:00</h1>
+    </div>
+    <div>
+        <div>
+            <input type="button" value="Play" onclick="play()"/>
+            <input type="button" value="Stop" onclick="stop()"/>
+        </div>
+        <div class="ball-area">
+            <img id="ball"src="images/ball.png" alt="Ball">
+        </div>
+    </div>
+
+
+
+    <div class="item">
+        <img src="images/banner.png" alt="banner" id="mainImg">
+        <div class="thumb">
+            <div><img src="images/banner2.jpg" alt="1" onclick="changeImage(this)"></div>
+            <div><img src="images/cafeteria.png" alt="2" onclick="changeImage(this)"></div>
+            <div><img src="images/hoatdongsinhvien.jpg" alt="3" onclick="changeImage(this)"></div>
+            <div><img src="images/london.png" alt="4" onclick="changeImage(this)"></div>
+            <div><img src="images/newyork.png" alt="5" onclick="changeImage(this)"></div>
+        </div> 
+    </div>
+    <div>
+    </div>  
+</body>
+</html>

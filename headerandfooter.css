@@ -4,7 +4,8 @@ div.head-bar{
     background-color: #1d559f ;
     color: white;
     position: fixed;
-    
+    height: 60px;
+    top: 0;
 }   
 div.logo{
     width: 30%;
