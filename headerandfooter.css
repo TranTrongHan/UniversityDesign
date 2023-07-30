@@ -4,10 +4,10 @@ div.head-bar{
     background-color: #1d559f ;
     color: white;
     position: fixed;
-    height: 60px;
     top: 0;
     width: 100%;
-    z-index: 99;
+    z-index: 99; 
+    
 }   
 div.logo{
     width: 30%;

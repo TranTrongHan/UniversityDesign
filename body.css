@@ -245,3 +245,79 @@ div.edu{
     padding-top: 10px;
     width: 100%;
 }
+
+/* FIFTH SECTION*/
+
+div.fifth-sec-container{
+    background-color: #f5f6fc;
+    box-sizing: border-box;
+    height: 900px;
+    padding: 10px;
+}
+div.hidden-image{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+   
+   
+}
+div.hidden-image > img{
+    height: 250px;
+    transform: scaleX(-1);
+}
+div.introduction{
+    width: 30%;
+    position: relative;
+    margin-top: 60px;
+}
+div.introduction > h1{
+    font-size: 2rem;
+}
+
+div.fifth-sec-body{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 50px;
+}
+
+div.group-container{
+    display: flex;
+    justify-content: space-between;
+    height: fit-content;
+    column-gap: 10px;
+    padding: 10px;
+    border-bottom: 2px solid #d2d3dc;
+    margin-bottom: 30px;
+}
+div.group{
+    display: flex;
+    width: 33%;
+    padding-right: 5px;
+    padding-left: 5px;
+}
+div.lefton-image{
+    margin-right: 10px;
+}
+div.lefton-image > img{
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+}
+div.major{
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    font-size: 1rem;
+    cursor: pointer;
+}
+div.major-link{
+    margin-top: 10px;
+}
+div.major-link > a{
+    display: block !important;
+    font-weight: 300;
+    line-height: 1.6;
+}
