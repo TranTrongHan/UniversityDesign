@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="javascript/code.jquery.com_jquery-3.7.0.min.js"></script>
+    <style>
+        #ballId{
+            position: relative;
+        }
+        a#gototop{
+            text-decoration: none;
+            padding: 15px 20px;
+            display: block;
+            color: aliceblue;
+            background-color: rgb(0,0,255,0.6);
+            position: fixed;
+            bottom:15px;
+            right: 15px;
+        }
+    </style>
+    <script>
+        $(document).ready(function(){
+            $("#showId").click(function(){
+                // $("#ballId").show(2000,function(){  // tham số đầu tiên chỉ định khoảng tgian thực hiện sự kiện, tham số thứ hai chỉ định thực hiện sau khoảng tgian ở tham số thứ 1
+                //     // $("body").css("background-color","brown") // .css():phương thức dùng thay đổi thuộc tính, không cần áp dụng chuẩn lạc đà
+                //     $("body").css({ // thay đổi nhiều thuộc tính css thì mở cặp {} trong
+                //         "background-color":"blue",
+                //         "color":"white"
+                //     })
+                // }) 
+
+                // $("#ballId").slideDown(2000, function(){
+                //     // $("body").css("background-color","lightblue")
+                //     $("body").css({
+                //         "background-color":"gold",
+                //         "color":"pink"
+                //     })
+                // }) 
+
+                $("#ballId").fadeIn(2000, function(){
+                    // $("body").css("background-color","lightblue")
+                    $("body").css({
+                        "background-color":"gold",
+                        "color":"pink"
+                    })
+                }) 
+            })
+            
+            $("#hideId").click(function(){
+                // $("#ballId").hide(2000, function(){
+                //     // $("body").css("background-color","lightblue")
+                //     $("body").css({
+                //         "background-color":"gold",
+                //         "color":"pink"
+                //     })
+                // }) 
+
+                // $("#ballId").slideUp(2000, function(){
+                //     // $("body").css("background-color","lightblue")
+                //     $("body").css({
+                //         "background-color":"gold",
+                //         "color":"pink"
+                //     })
+                // }) 
+
+                $("#ballId").fadeOut(2000,function(){
+                    $("body").css({
+                        "background-color":"lightgrey",
+                        "font-size":"20px"
+                    })
+                })
+            })
+
+           $("#animateId").click(function(){
+                $("#ballId").animate({
+                    "left":"600px",
+                    "width":"300px",
+                    
+                },3000).animate({
+                    "top":"300px",
+                    "with":"500px"
+                },3000).animate({
+                    "left":"0",
+                    "top":"0",
+                    "width":"200px"
+                },3000)
+           })
+
+           $(document).ready(function(){
+                $("#gototop").hide()
+
+                $(window).scroll(function(){
+                    if($(this).scrollTop() >= 100)
+                        $("#gototop").show("slow")
+                    else
+                        $("#gototop").hide("slow")
+                })
+           })
+
+           $("#gototop").click(function(){
+                $("html,body").animate({
+                    scrollTop:0
+                },2000)
+           })
+        })
+    </script>
+</head>
+<body>
+    <h1>WELCOME TO JQUERY</h1>
+    <div>
+        <a id="gototop" href="javascript:;">GO TO TOP</a>
+    </div>
+    <div>
+        <div>
+            <input type="button" value="Show" id="showId">
+            <input type="button"value="Hide" id="hideId">
+            <input type="button"value="Animate" id="animateId">
+        </div>
+        <img src="images/ball.png" width="200" alt="ball" id="ballId">
+    </div>
+    <div>
+        <div>
+            <input type="button" value="Show" id="showId">
+            <input type="button"value="Hide" id="hideId">
+            <input type="button"value="Animate" id="animateId">
+        </div>
+        <img src="images/ball.png" width="200" alt="ball" id="ballId">
+    </div>
+    <var><div>
+        <div>
+            <input type="button" value="Show" id="showId">
+            <input type="button"value="Hide" id="hideId">
+            <input type="button"value="Animate" id="animateId">
+        </div>
+        <img src="images/ball.png" width="200" alt="ball" id="ballId">
+    </div></var>
+    <div>
+        <div>
+            <input type="button" value="Show" id="showId">
+            <input type="button"value="Hide" id="hideId">
+            <input type="button"value="Animate" id="animateId">
+        </div>
+        <img src="images/ball.png" width="200" alt="ball" id="ballId">
+    </div>
+    <div>
+        <div>
+            <input type="button" value="Show" id="showId">
+            <input type="button"value="Hide" id="hideId">
+            <input type="button"value="Animate" id="animateId">
+        </div>
+        <img src="images/ball.png" width="200" alt="ball" id="ballId">
+    </div>
+    <div>
+        <div>
+            <input type="button" value="Show" id="showId">
+            <input type="button"value="Hide" id="hideId">
+            <input type="button"value="Animate" id="animateId">
+        </div>
+        <img src="images/ball.png" width="200" alt="ball" id="ballId">
+    </div>
+    <div>
+        <div>
+            <input type="button" value="Show" id="showId">
+            <input type="button"value="Hide" id="hideId">
+            <input type="button"value="Animate" id="animateId">
+        </div>
+        <img src="images/ball.png" width="200" alt="ball" id="ballId">
+    </div>
+    <div>
+        <div>
+            <input type="button" value="Show" id="showId">
+            <input type="button"value="Hide" id="hideId">
+            <input type="button"value="Animate" id="animateId">
+        </div>
+        <img src="images/ball.png" width="200" alt="ball" id="ballId">
+    </div>
+    <div>
+        <div>
+            <input type="button" value="Show" id="showId">
+            <input type="button"value="Hide" id="hideId">
+            <input type="button"value="Animate" id="animateId">
+        </div>
+        <img src="images/ball.png" width="200" alt="ball" id="ballId">
+    </div>
+    <div>
+        <div>
+            <input type="button" value="Show" id="showId">
+            <input type="button"value="Hide" id="hideId">
+            <input type="button"value="Animate" id="animateId">
+        </div>
+        <img src="images/ball.png" width="200" alt="ball" id="ballId">
+    </div>
+    <div>
+        <div>
+            <input type="button" value="Show" id="showId">
+            <input type="button"value="Hide" id="hideId">
+            <input type="button"value="Animate" id="animateId">
+        </div>
+        <img src="images/ball.png" width="200" alt="ball" id="ballId">
+    </div>
+    <div>
+        <div>
+            <input type="button" value="Show" id="showId">
+            <input type="button"value="Hide" id="hideId">
+            <input type="button"value="Animate" id="animateId">
+        </div>
+        <img src="images/ball.png" width="200" alt="ball" id="ballId">
+    </div>
+
+
+    <div>
+        <div>
+            <input type="button" value="Show" id="showId">
+            <input type="button"value="Hide" id="hideId">
+            <input type="button"value="Animate" id="animateId">
+        </div>
+        <img src="images/ball.png" width="200" alt="ball" id="ballId">
+    </div>
+
+</body>
+</html>

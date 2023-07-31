@@ -1,9 +1,22 @@
+/* GO TO TOP */
+div.gototop > a{
+    text-decoration: none;
+    display: block;
+    color: #fff !important;
+    background-color:rgba(18, 23, 99, 0.849);
+    padding: 15px;
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+}
+
 /* FIRST SECTION */
 .first-sec{
-    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/background.jpg);
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(/images/background.jpg );
     background-position: center;
     background-size: cover;
     height: 75vh;
+
 }
 section.first-sec{
     margin-top: 60px;
