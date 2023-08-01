@@ -1,13 +1,13 @@
-header{
-    margin-bottom: 60px;
-}
+
 div.head-bar{   
     justify-content: space-between;
     align-items: center;
-    /* background-color: #285ca0 ; */
+    background-color: #285ca0 ;
     color: white;
     position: fixed;
     top: 0;
+    right: 0;
+    left: 0;
     max-width: 100%;
     height: 10%;
     min-height: 50px;

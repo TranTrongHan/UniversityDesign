@@ -1,8 +1,9 @@
 div.carousel{
-    max-width: 90%;
+    max-width: 95%;
     min-height: 100vh;
     position: relative;
     margin: 0 auto;
+    margin-top: 90px;
 }
 div.carousel > ul{
     margin: 0;

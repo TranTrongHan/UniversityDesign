@@ -30,13 +30,13 @@ $(document).ready(function(){
                 "top":0,
                 "left":0,
                 "right":0,
-                "background-color":"rgba(45,51,77,0.8)",
+                "background-color":"rgba(40,92,160,0.8)",
                 "color":"#fff",
             })
         }
         else{
             $("#myheadbar").css({
-                "background-color":"blue",
+                "background-color":"rgba(40,92,160,1)",
                 "color":"#fff",
                 "positon":"relative",
                 "z-index":"99",
