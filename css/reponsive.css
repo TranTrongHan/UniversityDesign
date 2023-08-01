@@ -1,0 +1,74 @@
+@media screen and (max-width:875px){
+    div.head-bar{   
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        /* background-color: #285ca0 ; */
+        color: white;
+        position: fixed;
+        top: 0;
+        max-width: 100%;
+        min-height: 200px;
+    }  
+    div.aside-logo > ul > li > a{
+        color: white;
+        display: block;
+        padding: 0 15px 20px 0;
+        
+        margin-top: 13px;
+    }
+    .first-sec{
+        background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(/images/background.jpg );
+        background-position: center;
+        background-size: cover;
+        min-height: 400px
+    }
+
+    h1.hero-title{
+        gap: 15px;
+        display: flex;
+        font-weight: 700;
+        font-size: 40px;
+        color: white;
+    }
+
+    div.fifth-sec-container{
+        background-color: #f5f6fc;
+        box-sizing: border-box;
+        height: fit-content;  
+        width: fit-content; 
+        padding: 10px;
+    }
+    footer{
+        background-color: #010433;
+        min-height: 115vh;
+        padding: 20px 15px 20px 15px;
+        width: 100%;
+       
+    }
+    div.first-site-container{
+        border-bottom: 1px solid darkgray;
+        padding-bottom: 75px;  
+        flex-wrap: wrap;
+        min-height: 150px;
+    }
+    div.first-site-col, div.second-site-col{
+        width: auto;
+    }
+    div.second-site-container{
+        border-bottom: 1px solid darkgray;
+        padding: 25px 15px 10px 15px;
+        flex-wrap: wrap;
+        min-height: 330px;
+    }
+    
+}
+    
+@media screen and (max-width:500px){
+    div.hero-container{
+    
+        max-width: 50%;
+      
+        min-height: 100px;
+    }
+}

@@ -15,7 +15,7 @@ div.gototop > a{
     background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(/images/background.jpg );
     background-position: center;
     background-size: cover;
-    height: 75vh;
+    height: 30em;
 
 }
 section.first-sec{
@@ -25,11 +25,14 @@ div.first-sec-container{
     display: flex;
     justify-content: center;
     padding: 10px;
+    width: 90%;
+    
 }
 div.hero-container{
-    /* background-color: #c5b5b7; */
-    width: 50%;
+    
+    max-width: 50%;
     padding-left: 70px;
+    min-height: 50px;
 }
 h1.hero-title{
     gap: 15px;
@@ -37,14 +40,13 @@ h1.hero-title{
     font-weight: 700;
     font-size: 50px;
     color: white;
+    
+   
 }
 div.hero-content{
     width: 50%;
     display: flex;
     flex-direction: column;
-    height: 250px;
-    justify-content: end;
-    
     margin-top: 65px;
 }
 div.hero-content > p{
@@ -54,8 +56,8 @@ div.hero-content > p{
     font-size: 16px;
     font-weight:300;
     margin-left: 80px;
-    
     color: azure;
+    min-height: 80px;
 }  
 .hero-title::before{
     content: "";
@@ -264,15 +266,13 @@ div.edu{
 div.fifth-sec-container{
     background-color: #f5f6fc;
     box-sizing: border-box;
-    height: 900px;
+    
     padding: 10px;
 }
 div.hidden-image{
     position: absolute;
     bottom: 0;
     left: 0;
-   
-   
 }
 div.hidden-image > img{
     height: 250px;
@@ -289,10 +289,10 @@ div.introduction > h1{
 
 div.fifth-sec-body{
     width: 70%;
-    display: flex;
+    /* display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: flex-start; */
     margin-top: 50px;
 }
 
