@@ -1,62 +1,48 @@
 
 div.head-bar{   
     justify-content: space-between;
-    align-items: center;
     background-color: #285ca0 ;
     color: white;
     position: fixed;
     top: 0;
     right: 0;
     left: 0;
+    width: 100%;
     max-width: 100%;
-    height: 10%;
     min-height: 50px;
+    flex-wrap: wrap;
 }   
 div.logo{
     width: 30%;
+    display: flex;
+    align-items: center;
 }
 div.aside-logo{
     width: 70%;
-}
-div.aside-logo > ul > li{
-    list-style-type: none;
-   
-}
-div.aside-logo > ul > li > a{
-    
-    color: white;
-    display: block;
-    padding: 20px;
-    border-right: 1px solid white;
-    margin-top: 13px;
-   
-}
-ul{
     justify-content: space-evenly;
     align-items: center;
 }
 
+   
 
+/* FOOTER */
 footer{
     background-color: #010433;
-    min-height: 115vh;
     padding: 20px 15px 20px 15px;
+    /* min-height: 200px; */
+}
+div.footer-container{
     width: 100%;
-    min-height: 200px;
+   margin: 0 auto;
 }
 div.first-site-container{
     border-bottom: 1px solid darkgray;
-    
-    flex-wrap: wrap;
-   
 }
 div.first-site-col, div.second-site-col{
     width: 25%;
-    
 }
 div.first-site{
     gap:10px;
-    
     justify-content: space-around;
 }
 div.first-site img{
@@ -65,7 +51,7 @@ div.first-site img{
 div.second-site-container{
     border-bottom: 1px solid darkgray;
     padding: 25px 15px 10px 15px;
-    flex-wrap: wrap;
+    
     min-height: 330px;
 }
 i{
@@ -78,21 +64,19 @@ div.footer-title{
     font-size: 1.2rem;
 }
 div.footer-content{
-   
     flex-direction: column;
     line-height: 30px;
     color: #797a97;
     font-weight: 300;
     min-height: 120px;
 }
-
 div.third-site{
     justify-content: space-between;
     color: #797a97;
     font-weight: 300;
     font-size: .875rem;
     margin-top: 30px;
-    flex-wrap: wrap;
+    
 }
 div.third-site-col{
     justify-content: space-between;
@@ -115,7 +99,6 @@ div.footer-content > a {
     -webkit-text-fill-color: transparent;
     transition: all 0.3s ease-in-out;
 }
-  
 div.footer-content > a:before{
     content: '';
     background: #797a97;
@@ -127,7 +110,6 @@ div.footer-content > a:before{
     height: 3px;
     transition: all 0.3s ease-in-out;
 }
-  
 div.footer-content > a:hover {
    background-position: 0;
 }

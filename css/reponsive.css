@@ -1,9 +1,9 @@
-@media screen and (max-width:875px){
+/* @media screen and (max-width:875px){
     div.head-bar{   
         justify-content: space-between;
         align-items: center;
         flex-wrap: wrap;
-        /* background-color: #285ca0 ; */
+        background-color: #285ca0 ;
         color: white;
         position: fixed;
         top: 0;
@@ -63,12 +63,18 @@
     }
     
 }
-    
+     */
 @media screen and (max-width:500px){
-    div.hero-container{
-    
-        max-width: 50%;
-      
-        min-height: 100px;
+    div.logo{
+        width: 100%;
+    }
+    div.aside-logo{
+        width: 100%;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    div.aside-logo a{
+        font-size: 1rem;
+        line-height: 2rem;
     }
 }
